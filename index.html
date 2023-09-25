@@ -1,71 +1,389 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de etiquetas de texto de Dylan</title>
+    <title>Tabla</title>
 </head>
 <body>
-    <h1>Pagina de etiquetas de texto(h1)</h1>
-    <p style="text-align: center;"> h1 = para titulo</p>
-    <h2>Etiquetas(h2)</h2>
-    <p style="text-align: center;"> h2 = subtitulos</p>
-    <p>parrafo (p) <br> y (br) para saltar.</p>
-    <p style="text-align: center;"> p = parrafo</p>
-    <p style="text-align: center;"> br = saltar de parrafo</p>
-    <hr>
-    <p style="text-align: center;"> hr = linea cambio subtema</p>
-    <p>El <wbr>(wbr) escoge donde partir el texto en caso de encogerse, para efectos visuales, encojer la pantalla</p>
-    <p style="text-align: center;">  wbr= linea cambio subtema</p>
-    <p> 2<sup>2</sup>=4 y H<sub>2</sub>O es el simbolo quimico del agua.</p>
-    <p style="text-align: center;">  sup= superindice</p>
-    <p style="text-align: center;">  sub= subindice</p>
-    <p><strong>Texto importante(strong)</strong> y <em>texto resaltante(em)</em>.</p>
-    <p style="text-align: center;">  strong= importante</p>
-    <p style="text-align: center;">  em= resaltante</p>
-    <p><mark>texto de interes (mark).</mark></p>
-    <p style="text-align: center;">  mark= resaltado interes</p>
-    <p>En avengeres Ironman dijo: <q>Yo soy iroman</q>. (q).</p>
-    <p style="text-align: center;">  p= para citas</p>
-    <blockquote>
-        <p>Este es un bloque de texto citado (blockquote).</p>
-        <cite> nombre del trabajo</cite>
-    </blockquote>
-    <p style="text-align: center;">  blockquote= parrafo citado</p>
-    <p style="text-align: center;">  cite=para declarar el nombre del libro o la procedencia</p>
-    <p>La etiqueta <dfn>dfn</dfn> se usa para definir un término.</p>
-    <p style="text-align: center;">  dfn=temrino</p>
-    <p>La abreviatura de HTML es <abbr title="Hypertext Markup Language">HTML</abbr>.</p>
-    <p style="text-align: center;">  abbr=significado completo</p>
-    <p>Este texto es <small>pequeño (small)</small>.</p>
-    <p style="text-align: center;">  small=condiciones xd</p>
-    <p><ins>Este texto está insertado (ins).</ins></p>
-    <p style="text-align: center;">  ins= insertar</p>
-    <p><del>Este texto está eliminado (del).</del></p>
-    <p style="text-align: center;">  del= eliminado</p>
-    <p><s>Este texto está tachado (s).</s></p>
-    <p style="text-align: center;">  >s=tachado/p>
-    <p>El código HTML se ve así: <code>&lt;p&gt;Este es un párrafo&lt;/p&gt;</code></p>
-    <p style="text-align: center;">  >code=codigo</p>
-        <p style="text-align: center;">  &lt";", para mostrar &lt;</p>
-        <p style="text-align: center;">  elementos para mostrar elementos en html</p>
-        <p>mostrar codigo<samp>printf("Hola, mundo!");</samp></p>
-        <p style="text-align: center;">  samp=para mostrar codigo</p>
-        <p>mosrtrar teclas <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Supr</kbd> para reiniciar el sistema.</p>
-        <p style="text-align: center;">  kbd=muestra teclas</p>
-            <pre>
-                mostrar el texto con todo, puede ser preformateado como docigo pero no elementos
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Etiqueta</th>
+                <th scope="col">Descripcion</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/html"><code>&lt;html&gt;</code></a></td>
+                <td>Para iniciar el html.</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/base"><code>&lt;base&gt;</code></a></td>
+                <td>Definir el URL</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/head"><code>&lt;head&gt;</code></a></td>
+                <td>Para establecer metadatos del html</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/link"><code>&lt;link&gt;</code></a>></td>
+                <td>Enlaces, pero usualmente se usan en hojas de estilos</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/meta"><code>&lt;meta&gt;</code></a></td>
+                <td>Para colocar información del documento html</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/style"><code>&lt;style&gt;</code></a></td>
+                <td><strong>Define estilos directamente</strong>: <code>&lt;style&gt;</code> y <code>&lt;/style&gt;</code> (ambas obligatorias).</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/title"><code>&lt;title&gt;</code></a></td>
+                <td>Metadato de titulo que va en head</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/body"><code>&lt;body&gt;</code></a></td>
+                <td>Es el cuerpo del html, basicamente lo que se puede ver</td>
+            </tr>
+            
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/address"><code>&lt;address&gt;</code></a></td>
+                <td>Agrega información a la raiz principal o a la raiz padre</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/article"><code>&lt;article&gt;</code></a></td>
+                <td>Composicion que puede ser reutilizable en el html</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/aside"><code>&lt;aside&gt;</code></a></td>
+                <td>Consiste en contenido relacionado con el contenido principal del documento</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/footer"><code>&lt;footer&gt;</code></a></td>
+                <td>Cuerpo de abajo del html</td>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/header"><code>&lt;header&gt;</code></a></td>
+                <td>Elementos de arriba del html</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/Heading_Elements"><code>&lt;h1&gt;</code></a>, <a href="/es/docs/Web/HTML/Element/Heading_Elements"><code>&lt;h2&gt;</code></a>, <a href="/es/docs/Web/HTML/Element/Heading_Elements"><code>&lt;h3&gt;</code></a>, <a href="/es/docs/Web/HTML/Element/Heading_Elements"><code>&lt;h4&gt;</code></a>, <a href="/es/docs/Web/HTML/Element/Heading_Elements"><code>&lt;h5&gt;</code></a>, <a href="/es/docs/Web/HTML/Element/Heading_Elements"><code>&lt;h6&gt;</code></a></td>
+                <td>Titulos preestablecidos</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/main"><code>&lt;main&gt;</code></a></td>
+                <td>contendido principal del html</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/nav"><code>&lt;nav&gt;</code></a></td>
+                <td>Navegar en el documento por links</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/section"><code>&lt;section&gt;</code></a></td>
+                <td>para definir secciones genericos</td>
+            </tr>
+            
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/blockquote"><code>&lt;blockquote&gt;</code></a></td>
+                <td>crear referencias por medio de bloques</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/dd"><code>&lt;dd&gt;</code></a></td>
+                <td>proporciona detalles de un elemento anterior, usando listas</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/div"><code>&lt;div&gt;</code></a></td>
+                <td>etiqueta de bloque completo</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/dl"><code>&lt;dl&gt;</code></a></td>
+                <td>lista descriptiva</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/dt"><code>&lt;dt&gt;</code></a></td>
+                <td>elemento descriptivo en una list</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/figcaption"><code>&lt;figcaption&gt;</code></a></td>
+                <td>subtitulo</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/figure"><code>&lt;figure&gt;</code></a></td>
+                <td>titulo independiente</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/hr"><code>&lt;hr&gt;</code></a></td>
+                <td>cambio de parrafo</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/li"><code>&lt;li&gt;</code></a></td>
+                <td>elemento de lista</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/menu"><code>&lt;menu&gt;</code></a></td>
+                <td>lista desordenada</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ol"><code>&lt;ol&gt;</code></a></td>
+                <td>viñetas ordenadas</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/p"><code>&lt;p&gt;</code></a></td>
+                <td>texto de parrafo</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/pre"><code>&lt;pre&gt;</code></a></td>
+                <td>muesta el elemento de preformateado, diferente de lo que esta en html</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ul"><code>&lt;ul&gt;</code></a></td>
+                <td>lista desordenada</td>
+            </tr>
+            
         
-                function saludar() {
-                    console.log("Hola, mundo!");
-                }
-            </pre>
-            <p style="text-align: center;">  pre=preformateado</p>
-            <address>
-                <p>Para ponerse en contacto con nosotros, puede escribir a la siguiente dirección</p>
-            </address>        
-            <p style="text-align: center;">  address=dirreciones del autor</p>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/a"><code>&lt;a&gt;</code></a></td>
+                <td>enlace a otras paginas</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/abbr"><code>&lt;abbr&gt;</code></a></td>
+                <td>abrebiatura que se muestra al pasar el cursor</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/b"><code>&lt;b&gt;</code></a></td>
+                <td>texto importante</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/bdi"><code>&lt;bdi&gt;</code></a></td>
+                <td>aisla un elemento de un grupo preformateado</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/bdo"><code>&lt;bdo&gt;</code></a></td>
+                <td>anula al algoritmo bidimencional</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/br"><code>&lt;br&gt;</code></a></td>
+                <td>saltar de parrafo</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/cite"><code>&lt;cite&gt;</code></a></td>
+                <td>cita corta</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/code"><code>&lt;code&gt;</code></a></td>
+                <td>muestra el codigo tal y como esta</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/data"><code>&lt;data&gt;</code></a></td>
+                <td>convierte para que sea interpretable por la maquina</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/dfn"><code>&lt;dfn&gt;</code></a></td>
+                <td>marca termino por definicion</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/em"><code>&lt;em&gt;</code></a></td>
+                <td>texto importante pero no tanto</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/i"><code>&lt;i&gt;</code></a></td>
+                <td>texto importante pero menos que el anterior</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/kbd"><code>&lt;kbd&gt;</code></a></td>
+                <td>marca tecla</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/mark"><code>&lt;mark&gt;</code></a></td>
+                <td>texto resaltado</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/q"><code>&lt;q&gt;</code></a></td>
+                <td>cita corta</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/rp"><code>&lt;rp&gt;</code> <small>(en-US)</small></a></td>
+                <td>parentesis de imporancia, remplaza lo que se vio antes</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/rt"><code>&lt;rt&gt;</code> <small>(en-US)</small></a></td>
+                <td>elemento ruby, en texto ruby</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ruby"><code>&lt;ruby&gt;</code> <small>(en-US)</small></a></td>
+                <td>texto al lado de main</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/s"><code>&lt;s&gt;</code></a></td>
+                <td>texto destacado<td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/samp"><code>&lt;samp&gt;</code></a></td>
+                <td>ejemplo de salida de programa</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/small"><code>&lt;small&gt;</code></a></td>
+                <td>cambio del tamaño</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/span"><code>&lt;span&gt;</code></a></td>
+                <td>bloque de código, acomodado</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/strong"><code>&lt;strong&gt;</code></a></td>
+                <td>elemento importante</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/sub"><code>&lt;sub&gt;</code></a></td>
+                <td>subindice</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/sup"><code>&lt;sup&gt;</code></a></td>
+                <td>superindice</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/time"><code>&lt;time&gt;</code></a></td>
+                <td>para elementos de tiempo</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/u"><code>&lt;u&gt;</code></a></td>
+                <td>subrayar texto</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/var"><code>&lt;var&gt;</code></a></td>
+                <td>variables de programa</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/wbr"><code>&lt;wbr&gt;</code></a></td>
+                <td>salto de línea si se encoge la pantalla</td>
+            </tr>
 
-
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/area"><code>&lt;area&gt;</code></a></td>
+                <td>dividir el body en varios campos</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/audio"><code>&lt;audio&gt;</code></a></td>
+                <td>Insertar audio</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/img"><code>&lt;img&gt;</code></a></td>
+                <td>imagen</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/map"><code>&lt;map&gt;</code></a></td>
+                <td>describir uno o dos parrafos</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/track"><code>&lt;track&gt;</code></a></td>
+                <td>hijo de elemento multimedia</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/video"><code>&lt;video&gt;</code></a></td>
+                <td>para video </td>
+            </tr>
+              
+            
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/caption"><code>&lt;caption&gt;</code></a></td>
+                <td>titulo de tabla</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/col"><code>&lt;col&gt;</code></a></td>
+                <td>clocar datos para columna</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/colgroup"><code>&lt;colgroup&gt;</code></a></td>
+                <td>para crear la tabla </td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/table"><code>&lt;table&gt;</code></a></td>
+                <td>para el cuerpo de tabla</td>
+            </tr>
+            <tr>
+                <td><a class="only-in-en-us" title="Currently only available in English (US)" href="https://developer.mozilla.org/es/docs/Web/HTML/Element/tbody"><code>&lt;tbody&gt;</code> <small>(en-US)</small></a></td>
+                <td>para el cuerpo de tabla</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/td"><code>&lt;td&gt;</code></a></td>
+                <td>elemento de tabla</td>
+            </tr>
+            <tr>
+                <td><a class="only-in-en-us" title="Currently only available in English (US)" href="https://developer.mozilla.org/es/docs/Web/HTML/Element/tfoot"><code>&lt;tfoot&gt;</code> <small>(en-US)</small></a></td>
+                <td> elementos de abajo tabla, definiciones</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/th"><code>&lt;th&gt;</code></a></td>
+                <td> encabezado de celda </td>
+            </tr>
+            <tr>
+                <td><a class="only-in-en-us" title="Currently only available in English (US)" href="https://developer.mozilla.org/es/docs/Web/HTML/Element/thead"><code>&lt;thead&gt;</code> <small>(en-US)</small></a></td>
+                <td>para atributos de tabla</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/tr"><code>&lt;tr&gt;</code></a></td>
+                <td>define tuplas</td>
+            </tr>
+              
+            
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/button"><code>&lt;button&gt;</code></a></td>
+                <td>crear botones marcados </td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/datalist"><code>&lt;datalist&gt;</code></a></td>
+                <td> crear lista de datos que se usarán</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/fieldset"><code>&lt;fieldset&gt;</code></a></td>
+                <td>permite dividir por grupos en diferentes campos el formulario</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/form"><code>&lt;form&gt;</code></a></td>
+                <td>crear formulario</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/input"><code>&lt;input&gt;</code></a></td>
+                <td>para ingresar valores de entrada</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/label"><code>&lt;label&gt;</code></a></td>
+                <td>etiqueta</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/legend"><code>&lt;legend&gt;</code></a></td>
+                <td>titulo para un grupo de campos </td>
+            </tr>
+            <tr>
+                <td><a class="only-in-en-us" title="Currently only available in English (US)" href="https://developer.mozilla.org/es/docs/Web/HTML/meter"><code>&lt;meter&gt;</code> <small>(en-US)</small></a></td>
+                <td>valor escalar</td>
+            </tr>
+            <tr>
+                <td><a class="only-in-en-us" title="Currently only available in English (US)" href="https://developer.mozilla.org/es/docs/Web/HTML/optgroup"><code>&lt;optgroup&gt;</code> <small>(en-US)</small></a></td>
+                <td>grupo dentro de select</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/option"><code>&lt;option&gt;</code></a></td>
+                <td> representar en un formulario un elemento en select o optgroup </td>
+            </tr>
+            <tr>
+                <td><a class="only-in-en-us" title="Currently only available in English (US)" href="https://developer.mozilla.org/es/docs/Web/HTML/output"><code>&lt;output&gt;</code> <small>(en-US)</small></a></td>
+                <td>donde se puede representar los resultados</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/progress"><code>&lt;progress&gt;</code></a></td>
+                <td>Para mostrar el avance de una tarea</td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/select"><code>&lt;select&gt;</code></a></td>
+                <td>muestra un menú de opciones </td>
+            </tr>
+            <tr>
+                <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/textarea"><code>&lt;textarea&gt;</code></a></td>
+                <td>edición multilinea del texto sin formato</td>
+            </tr>
+              
+        </tbody>
+    </table>
 </body>
 </html>
